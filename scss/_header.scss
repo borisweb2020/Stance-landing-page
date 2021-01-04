@@ -1,0 +1,181 @@
+.header{
+	color: $white;
+
+	width: 100%;
+
+	position: absolute;
+	left: 0;
+	top: 48px;
+	z-index: 100;
+
+	&__inner{
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__logo{
+		line-height: 0;
+	}
+
+	&__nav,
+	&__link{
+		font-family: 'Roboto', sans-serif;
+		font-weight: 300;
+		font-size: 18px;
+
+		display: flex;
+		align-items: center;
+	}
+
+	&__nav{
+		width: 415px;
+		justify-content: space-between;
+	}
+
+	&__nav > span{
+		color: $red-link;
+	}
+
+	&__nav-link{
+		transition: color .2s linear;
+
+		&:hover{
+			color: darken($white, 20%);
+		}
+	}
+
+	&__link{
+		position: relative;
+	}
+
+	&__link-lang{
+		margin-right: 5px;
+	}
+
+	&__link-shift{
+		display: none;
+
+		list-style-type: none;
+
+		position: absolute;
+		top: 100%;
+		left: 0;
+		z-index: 1;
+
+		& > li{
+			margin-bottom: .5em;
+		}
+
+		& a{
+			text-decoration: underline;
+			transition: color .2s linear;
+		}
+
+		& a:hover{
+			color: darken($white, 20%);
+		}
+
+		&.show{
+			display: block;
+		}
+	}
+
+	&__link-toggle{
+		display: block;
+		width: 10px;
+		height: 6px;
+
+		margin-right: 50px;
+
+		& > svg{
+			fill: none;
+			stroke: $white;
+			stroke-width: 1px;
+
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+
+		&.rotate{
+			transform: rotate(180deg);
+		}
+	}
+
+	&__link-phone{
+		transition: color .2s linear;
+
+		&:hover{
+		color: darken($white, 20%);			
+		}
+	}
+}
+
+@media(max-width: 769px){
+	.header{
+		&__inner{
+			justify-content: space-between;
+			position: relative;
+		}
+
+		&__nav{
+			display: none;
+
+			&.active{
+				display: flex;
+				flex-direction: column;
+				align-items: flex-end;
+
+				position: absolute;
+				top: 100%;
+				left: 0;
+				z-index: 1;
+
+				width: 100%;
+				padding-top: 10px;
+				
+				& > span,
+				& > a{
+					margin-bottom: 8px;
+				}
+
+			}
+		}
+
+		&__link-toggle{
+			margin-right: 25px;
+		}
+	}
+}
+
+@media(max-width: 376px){
+	.header{
+
+		&__inner{
+			justify-content: space-between;
+		}
+		
+		&__nav,
+		&__link{
+			font-size: 15px;
+		}
+
+		&__link-toggle{
+			margin-right: 10px;
+		}
+	}
+}
+
+@media(max-width: 321px){
+	.header{
+
+		&__nav,
+		&__link{
+			font-size: 13px;
+		}
+
+		&__link-toggle{
+			margin-right: 10px;
+		}
+	}
+}

@@ -1,0 +1,29 @@
+.burger{
+	display: none;
+	
+	border: 1px solid $white;
+	border-radius: 4px;
+	// background-color: inherit;
+
+	width: 34px;
+	height: 28px;
+
+	&_line{
+		font-size: 0;
+		width: 18px;
+		height: 2px;
+
+		background-color: $white;
+
+		content: '';
+		box-shadow: 0 6px 0 0 $white, 0 -6px 0 0 $white;
+	}
+}
+
+@media(max-width: 769px){
+	.burger{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}

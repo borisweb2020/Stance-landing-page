@@ -1,0 +1,45 @@
+.title-h2{
+	@include title;
+	font-size: 64px;
+	color: $title-black;
+}
+
+.title-h3{
+	@include title;
+	font-size: 30px;
+	color: $title-black;
+}
+
+.title-h4{
+	@include title;
+	font-size: 20px;
+	color: $title-black;
+}
+
+@media(max-width: 1025px){
+	.title-h2{
+		font-size: 50px;
+	}
+
+	.title-h3{
+		font-size: 25px;
+	}
+
+	.title-h4{
+		font-size: 20px;
+	}
+}
+
+@media(max-width: 426px){
+	.title-h2{
+		font-size: 22px;
+	}
+
+	.title-h3{
+		font-size: 17px;
+	}
+
+	.title-h4{
+		font-size: 15px;
+	}
+}

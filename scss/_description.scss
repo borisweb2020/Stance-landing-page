@@ -1,0 +1,161 @@
+.description{
+	padding-bottom: 45px;
+
+	&__item{
+		display: flex;
+
+		margin-bottom: 150px;
+	}
+
+	&__item:nth-child(even){
+		flex-direction: row-reverse;
+	}
+
+	&__photo, &__content{
+		width: 50%;
+	}
+
+	&__photo{
+		margin-right: 15px;
+		text-align: right;
+		font-size: 0;
+	}
+
+	&__item:nth-child(even) > .description__photo{
+		margin-right: 0;
+		margin-left: 15px;
+		text-align: left;
+	}
+
+	&__image{
+		max-width: 100%;
+		height: auto;
+	}
+
+	&__content{
+		margin-left: 15px;
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__item:nth-child(even) > .description__content{
+		margin-right: 15px;
+		margin-left: 0;
+	}
+
+
+	&__content-title{
+		margin-bottom: 50px;
+	}
+
+	&__content-text{
+		width: 466px;
+
+		font-size: 18px;
+		line-height: 1.5;
+		color: $text-black;
+
+		& p{
+			margin-bottom: 26px;
+		}
+	}
+
+	&__content-ol,
+	&__content-ul{
+		list-style-position: inside;
+		margin-bottom: 26px;
+	}
+
+	&__content-ul{
+		list-style: none;
+
+		& > li::before{
+			content: '';
+
+			display: inline-block;
+			width: 13px;
+			height: 2px;
+			background-color: $red-link;
+
+			vertical-align: middle;
+			margin-right: 10px;
+		}
+	}
+
+	&__content-ol li{
+		color: $red-link;
+	}
+
+	&__content-ol span{
+		color: $text-black;
+	}
+}
+
+@media(max-width: 1025px){
+	.description{
+		&__item{
+			margin-bottom: 100px;
+		}
+
+		&__content-text{
+			font-size: 16px;
+		}
+	}
+}
+
+@media(max-width: 769px){
+	.description{
+		&__item{
+			display: block;
+			margin-bottom: 50px;
+		}
+
+		&__photo{
+			width: 100%;
+			margin-right: 0;
+			margin-bottom: 30px;
+
+			padding: 0 10px;
+		}
+
+		&__image{
+			width: 100%;
+		}
+
+		&__content{
+			width: 100%;
+			margin-left: 0;
+		}
+
+		&__content-title{
+			margin-bottom: 35px;
+		}
+
+		&__item:nth-child(even) > .description__photo{
+			margin-left: 0;
+		}
+
+		&__item:nth-child(even) > .description__content{
+			margin-right: 0;
+		}
+	}
+}
+
+@media(max-width: 426px){
+	.description{
+		padding-bottom: 25px;
+
+		&__item{
+			margin-bottom: 35px;
+		}
+
+		&__content-text{
+			font-size: 13px;
+
+			width: 300px;
+		}
+	}
+}

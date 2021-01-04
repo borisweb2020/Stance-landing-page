@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Boris Web">
+	<meta name="description" content="Testing">
+
+	<!-- == Favicons == -->
+	<link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+	<link rel="manifest" href="favicons/site.webmanifest">
+	<link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="apple-mobile-web-capable" content="yes">
+	<meta name="MobileOptimized" content="width">
+	<meta name="HandheldFriendly" content="true">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Stance</title>
+
+	<link rel="stylesheet" href="style/style.min.css">
+</head>
+<body>
+
+<!-- == Sprites == -->
+<svg style="display: none;">
+	<symbol id="arrow" viewBox="0 0 11 6">
+		<g>
+			<path d="M10 1L5.5 5L1 1"></path>
+		</g>
+	</symbol>
+</svg>	
+
+<!-- Header -->
+<header class="header">
+	<div class="container">
+		<div class="header__inner">
+			<div class="header__logo">
+				<a href="#">
+					<picture>
+						<source srcset="images/logo-mobile.png" media="(max-width: 426px)">
+						<img class="header__item-image" src="images/logo.png" alt="logo">
+					</picture>
+				</a>
+			</div>
+			<nav class="header__nav" id="headerNav">
+				<span>Home</span>
+				<a class="header__nav-link" href="#">About</a>
+				<a class="header__nav-link" href="#">Works</a>
+				<a class="header__nav-link" href="#">Join</a>
+				<a class="header__nav-link" href="#">Contact</a>
+			</nav>
+			<div class="header__link">
+				<div class="header__link-lang">
+					En
+				</div>
+				<ul class="header__link-shift" id="langShift">
+					<li><a href="#">Ru</a></li>
+					<li><a href="#">Kz</a></li>
+				</ul>
+				<button class="header__link-toggle" type="button" id="langShiftBtn">
+					<svg>
+						<use xlink:href="#arrow"></use>
+					</svg>
+				</button>
+				<a class="header__link-phone" href="tel: +73433823821">8 (343) 382 38 21</a>
+			</div>
+
+			<button class="burger" id="burger" type="button">
+				<div class="burger_line">Menu</div>
+			</button>
+		</div>
+	</div>
+</header>
+
+<!-- Intro -->
+<section class="intro">
+	<div class="container">
+		<div class="intro__inner">
+			<h1 class="intro__title">Mercedes-Benz
+				<br>
+			 190 (W201)</h1>
+			<div class="intro__text">The model under the title 190, in the W201 body, is a mid-range sedan from the German automobile manufacturer Mercedes-Benz. The car was produced starting in 1982, and it was removed from the Assembly line in 1993.</div>
+		</div>
+	</div>
+	<button class="intro__scroll" type="button" id="introScroll">
+		<svg>
+			<use xlink:href="#arrow"></use>
+		</svg>
+	</button>
+</section>
+
+<!-- Advantages -->
+<section class="advantages" id="advantages">
+	<div class="container">
+		<h2 class="advantages__title title-h2">Advantages <br>
+		 of contacting our company</h2>
+		<div class="advantages__inner">
+
+			<div class="advantages__item">
+				<picture>
+					<source srcset="images/star-icon-mobile.png" media="(max-width: 426px)">
+					<img class="advantages__item-image" src="images/star-icon.png" alt="star">
+				</picture>
+				<h3 class="advantages__item-title title-h3">Professionalism</h3>
+				<div class="advantages__item-line">
+					<span class="note">the separating line</span>
+				</div>
+				<div class="advantages__item-text">
+					<p>The projection, according to the modified Euler equation, distorts the aperiodic altimeter. The center of forces elliptically forces a different view of what a dynamic total rotation is.</p>
+				</div>
+			</div>
+
+			<div class="advantages__item">
+				<picture>
+					<source srcset="images/tag-icon-mobile.png" media="(max-width: 426px)">
+					<img class="advantages__item-image" src="images/tag-icon.png" alt="tag">
+				</picture>
+				<h3 class="advantages__item-title title-h3">Favorable price</h3>
+				<div class="advantages__item-line">
+					<span class="note">the separating line</span>
+				</div>
+				<div class="advantages__item-text">
+					<p>The deviation, in accordance with the basic law of dynamics, is large. It follows directly from the conservation laws that the error binds the stabilizer. </p>
+				</div>
+			</div>
+
+			<div class="advantages__item">
+				<picture>
+					<source srcset="images/like-icon-mobile.png" media="(max-width: 426px)">
+					<img class="advantages__item-image" src="images/like-icon.png" alt="like">
+				</picture>
+				<h3 class="advantages__item-title title-h3">Individual approach</h3>
+				<div class="advantages__item-line">
+					<span class="note">the separating line</span>
+				</div>
+				<div class="advantages__item-text">
+					<p>Based on Bulgakov's astatic coordinate system, the last vector equality connects the outgoing gyrocompass. The axis of proper rotation astatically represents the total rotation. </p>
+				</div>
+			</div>
+
+		</div> <!-- /.advantages__inner -->
+	</div> <!-- /.container -->
+</section>
+
+<!-- Description -->
+<section class="description">
+	<div class="description__item">
+		<div class="description__photo">
+			<picture>
+				<source srcset="images/photo-1.webp" type="image/webp">
+				<img class="description__image" src="images/photo-1.jpg" alt="a vehicle">
+			</picture>
+		</div>
+		<div class="description__content">
+			<h2 class="description__content-title title-h2">Facts <br> 
+			about the model</h2>
+			<div class="description__content-text">
+				<p>The model under the title 190, in the W201 body, is a mid-range sedan from the German automobile manufacturer Mercedes-Benz. The car was produced starting in 1982, and it was removed from the Assembly line in 1993.</p>
+				<ol class="description__content-ol">
+					<li><span>All the devices used had a row layout scheme</span></li>
+					<li><span>There were four petrol engines, and they were atmospheric</span></li>
+					<li><span>Different versions of the box were also used</span></li>
+				</ol>
+				<p>The car was equipped with independent suspension. It was designed as a pushed "MacPherson" in the front and a "multi-link" in the back. The brakes on all wheels of the car were installed disc, and their drive was completely normal, that is, hydraulic..</p>
+			</div>
+		</div>
+	</div>
+	<div class="description__item">
+		<div class="description__photo">
+			<picture>
+				<source srcset="images/photo-2.webp" type="image/webp">
+				<img class="description__image" src="images/photo-2.jpg" alt="a vehicle">
+			</picture>
+		</div>
+		<div class="description__content">
+			<div class="description__content-text">
+				<p>The interior of the car could fit up to five people inside. The seats were covered with leather. They had a partly electronic, partly manual adjustment system. They also used a heating system. The car was equipped with an audio system and climate control. Power Windows were used with an electric drive. The trunk of the sedan</p>
+				<p>Were given the possibility to transport up to 411 liters of volume:</p>
+				<ul class="description__content-ul">
+					<li>The design of this model was similar to the synchronously produced models</li>
+					<li>Mercedes of other classes, such as W124, W140</li>
+					<li>The car's headlights were rectangular, and the radiator grille was chrome-plated</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Parameters -->
+<section class="parameters">
+	<div class="container">
+		<h2 class="parameters__title title-h2">Technical<br> 
+		parameters</h2>
+		<div class="parameters__inner">
+			<table class="parameters__table">
+				<thead>
+					<tr>
+						<th>parameters</th>
+						<th>e 220 d</th>
+						<th>e 290 td</th>
+						<th>e 300 d</th>
+						<th>e 200 cdi</th>
+						<th>e 220 cdi</th>
+						<th>e 270 cdi</th>
+						<th>e 320 cdi</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Lubrication system of a car, L</td>
+						<td>6,5</td>
+						<td>7,0</td>
+						<td>n &frasl; d</td>
+						<td>6,0</td>
+						<td>6,5</td>
+						<td>7,0</td>
+						<td>7,5</td>
+					</tr>
+					<tr>
+						<td>Cooling system, L</td>
+						<td>9,0</td>
+						<td>9,5</td>
+						<td>n &frasl; d</td>
+						<td>10,0</td>
+						<td>9,0</td>
+						<td>10,6</td>
+						<td>11,2</td>
+					</tr>
+					<tr>
+						<td>Fuel tank &frasl; fuel reserve, L</td>
+						<td>65 &frasl; 8</td>
+						<td>65 &frasl; 8</td>
+						<td>65 &frasl; 8</td>
+						<td>65 &frasl; 8</td>
+						<td>65 &frasl; 8</td>
+						<td>65 &frasl; 8</td>
+						<td>65 &frasl; 8</td>
+					</tr>
+				</tbody>
+			</table>
+		</div> <!-- /.parameters__inner -->
+	</div> <!-- /.container -->
+</section>
+
+<!-- Works -->
+<section class="works">
+	<div class="container">
+		<h2 class="works__title title-h2">More <br>
+		of our work</h2>
+	</div>
+	
+	<div class="works__inner">
+		<div class="works__wrapper">
+			<div class="works__slider" id="workSlider">
+
+				<div class="works__item">
+					<div class="works__item-photobox">
+						<img class="works__item-image" src="images/car-1.jpg" alt="a car">
+					</div>
+					<h3 class="works__item-title title-h3">Lada Niva 2121</h3>
+				</div>
+
+				<div class="works__item">
+					<div class="works__item-photobox">
+						<img class="works__item-image" src="images/car-2.jpg" alt="a car">
+					</div>
+					<h3 class="works__item-title title-h3">Mercedes-Benz S560 W222</h3>
+				</div>
+
+				<div class="works__item">
+					<div class="works__item-photobox">
+						<img class="works__item-image" src="images/car-3.jpg" alt="a car">
+					</div>
+					<h3 class="works__item-title title-h3">Volkswagen Golf 2 </h3>
+				</div>
+
+				<div class="works__item">
+					<div class="works__item-photobox">
+						<img class="works__item-image" src="images/car-4.jpg" alt="a car">
+					</div>
+					<h3 class="works__item-title title-h3">BMW E30</h3>
+				</div>
+
+				<div class="works__item">
+					<div class="works__item-photobox">
+						<img class="works__item-image" src="images/car-5.jpg" alt="a car">
+					</div>
+					<h3 class="works__item-title title-h3">Volkswagen Golf 2 </h3>
+				</div>
+
+				<div class="works__item">
+					<div class="works__item-photobox">
+						<img class="works__item-image" src="images/car-6.jpg" alt="a car">
+					</div>
+					<h3 class="works__item-title title-h3">Volkswagen Golf 2 </h3>
+				</div>
+
+			</div> <!-- /.works__slider -->
+		</div> <!-- /.works__wrapper -->
+	</div> <!-- /.works__inner -->
+
+	<div class="container">
+		<div class="works__swiper">
+			<input class="works__swiper-range" type="range" id="rangeSlider" min="1" value="1" step="1">
+		</div>
+	</div>
+</section>
+
+<!-- Contacts -->
+<section class="contacts">
+	<div class="contacts__map" id="map">
+		
+	</div>
+	<div class="contacts__inner">
+		<h2 class="contacts__title title-h2">Contacts</h2>
+		<div class="contacts__item">
+			<h4 class="contacts__item-title title-h4">Address</h4>
+			<div class="contacts__item-content">
+				123557 Moscow, Presnensky district, Bolshaya Gruzinskaya str., 17, st.1
+			</div>
+		</div>
+		<div class="contacts__item">
+			<h4 class="contacts__item-title title-h4">Telephone</h4>
+			<div class="contacts__item-content">
+				<a class="contacts__item-phone" href="tel:+74951396651">+7 (495) 139 66 51</a>
+				<br>
+				<a class="contacts__item-phone" href="tel:+74951438055">+7 (495) 143 80 55</a>
+			</div>
+		</div>
+		<div class="contacts__item">
+			<h4 class="contacts__item-title title-h4">E-mail</h4>
+			<a class="contacts__item-email" href="mailto:info_stance@gmail.com">info_stance@gmail.com</a>
+		</div>
+	</div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+	<div class="container">
+		<div class="footer__inner">
+			<div class="footer__copyrights">
+				<p class="footer__copyrights-title">&copy; &copy; stance, 2009 - 2020</p>
+				<p class="footer__copyrights-text">All rights reserved <br>
+				Privacy policy</p>
+			</div>
+			<div class="footer__item">
+				<nav class="footer__item-menu">
+					<div class="footer__item-title">Menu</div>
+					<ul class="footer__item-list">
+						<li>Home</li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Works</a></li>
+					</ul>
+					<ul class="footer__item-list">
+						<li><a href="#">Join</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</nav>
+				<div class="footer__item-links">
+					<div class="footer__item-title">Social network</div>
+					<ul class="footer__item-list">
+						<li><a href="#" target="_blank">Facebook</a></li>
+						<li><a href="#" target="_blank">Instagram</a></li>
+						<li><a href="#" target="_blank">YouTube</a></li>
+					</ul>
+					<ul class="footer__item-list">
+						<li><a href="#" target="_blank">Twitter</a></li>
+					</ul>
+				</div>
+				<a class="footer__item-logo" href="https://albaweb.ru" target="_blank">
+					<picture>
+						<source srcset="images/albaweb-logo-mobile.png" media="(max-width: 426px)">
+						<img src="images/albaweb-logo.png" alt="logo">
+					</picture>
+				</a>	
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="script/libs.min.js"></script>
+<script src='script/main.js'></script>
+
+<script>
+
+function initMap(){
+
+	const options = {
+		center: {lat: 55.759, lng: 37.590},
+		zoom: 14,
+		styles: [
+  {
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#121925"
+      }
+    ]
+  },
+  {
+    "elementType": "labels.icon",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#d6d7d9"
+      }
+    ]
+  },
+  {
+    "elementType": "labels.text.stroke",
+    "stylers": [
+      {
+        "color": "#212121"
+      },
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#ffffff"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.country",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#ffffff"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.land_parcel",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.locality",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#d6d7d9"
+      }
+    ]
+  },
+  {
+    "featureType": "poi",
+    "elementType": "labels.text",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "poi",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#d6d7d9"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.business",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.park",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#121925"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.park",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#d6d7d9"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.park",
+    "elementType": "labels.text.stroke",
+    "stylers": [
+      {
+        "color": "#1b1b1b"
+      },
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "road",
+    "elementType": "geometry.fill",
+    "stylers": [
+      {
+        "color": "#4e535b"
+      }
+    ]
+  },
+  {
+    "featureType": "road",
+    "elementType": "labels.icon",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "road",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#d6d7d9"
+      }
+    ]
+  },
+  {
+    "featureType": "road.arterial",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#4e535b"
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#4e535b"
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway.controlled_access",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#4e535b"
+      }
+    ]
+  },
+  {
+    "featureType": "road.local",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#d9d7d9"
+      }
+    ]
+  },
+  {
+    "featureType": "transit",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "transit",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#757575"
+      }
+    ]
+  },
+  {
+    "featureType": "water",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#121925"
+      }
+    ]
+  },
+  {
+    "featureType": "water",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#ffffff"
+      }
+    ]
+  }
+]
+	}
+
+	const myMap = new google.maps.Map(document.getElementById('map'), options)
+
+	const marker = new google.maps.Marker({
+		position: {lat: 55.759, lng: 37.620},
+		map: myMap,
+		icon: "images/tag.png",
+	})
+
+}
+
+</script>
+
+<script defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRrqZntEFM6epzaZlrXmmOVhhu8Y1bBUc&callback=initMap">
+</script>
+
+</body>
+</html>
